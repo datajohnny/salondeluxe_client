@@ -1,0 +1,18 @@
+{
+  "name": "salondeluxe",
+  "version": "0.0.1",
+  "description": "Salondeluxe Front-End Website",
+  "author": "Johnny Mejias",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-qunit": "~0.3.0",
+    "handlebars": "~1.2.1",
+    "ember-template-compiler": "~1.3.0-beta.4",
+    "grunt-ember-templates": "~0.4.18",
+    "grunt-sass": "~0.9.0"
+  }
+}
