@@ -1,0 +1,18 @@
+.navigation { 
+  @include button-group-container();
+
+  .navigation-button { 
+    @include button($full-width: true, $bg: orange);
+
+    &.active {
+      @include button($full-width: true, $bg: darken(orange, 25%));
+    }
+  }
+
+  & > li {
+    @include button-group-style($radius: true, $even: 5);
+  }
+
+
+
+}
