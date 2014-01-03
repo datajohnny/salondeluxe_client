@@ -11,9 +11,8 @@ function exists(selector) {
 
 module("Application", {
   setup: function() {
-    Ember.run(App, App.advanceReadiness);
+    App.reset();
   },
   teardown: function() {
-    App.reset();
   }
 });

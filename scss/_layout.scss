@@ -10,7 +10,7 @@
   }
 
   & > li {
-    @include button-group-style($radius: true, $even: 5);
+    @include button-group-style($radius: true, $even: 6);
   }
 
 
