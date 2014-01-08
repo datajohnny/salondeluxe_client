@@ -1,1 +1,5 @@
-<h1>Galleries</h1>
+<ul class="clearing-thumbs" data-clearing>
+  {{#each}}
+    <li><a {{bind-attr src=image}}><img {{bind-attr src=image}}></a></li>
+  {{/each}}
+</ul>
