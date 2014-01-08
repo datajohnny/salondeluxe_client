@@ -7,7 +7,16 @@
 </dl>
 
 <ul class="large-block-grid-3">
-  {{#collection contentBinding="App.ServicesView.itemViewClass"}}
-    {{outlet}}
+  {{#collection contentBinding="model"}}
+    <li {{bind-attr class="category :service" }}>
+      <div class="panel clearfix service-panel">
+        <h4 class="text-center">{{name}}</h4>
+        <div class="clearfix">
+          <p class="text-left left">Desde: ${{price}}.00</p>
+          <p class="text-right right">{{time}}min</p>
+        </div>
+        <p class="text-justify service-description">{{description}}</p>
+      </div>
+    </li>
   {{/collection}}
 </ul>
