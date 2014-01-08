@@ -1,1 +1,22 @@
-<h1>Services</h1>
+<dl class="sub-nav">
+  <dt>Filtro: </dt>
+  <dd id="all-services" class="active"><a {{action "showAll"}}>All</a></dd>
+  <dd id="cabello-filter"><a {{action "hideOthers" "cabello"}}>Cabello</a></dd>
+  <dd id="manos-pies-filter"><a {{action "hideOthers" "manos-pies"}}>Manos y Pies</a></dd>
+  <dd id="estetica-filter"><a {{action "hideOthers" "estetica"}}>Estetica</a></dd>
+</dl>
+
+<ul class="large-block-grid-3">
+  {{#each filtered_categories}}
+    <li {{bind-attr class="category :service" }}>
+      <div class="panel clearfix service-panel">
+        <h4 class="text-center">{{name}}</h4>
+        <div class="clearfix">
+          <p class="text-left left">Desde: ${{price}}.00</p>
+          <p class="text-right right">{{time}}min</p>
+        </div>
+        <p class="text-justify service-description">{{description}}</p>
+      </div>
+    </li>
+  {{/each}}
+</ul>

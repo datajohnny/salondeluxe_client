@@ -1,3 +1,3 @@
 App.ArticlesView = Ember.View.extend({
-  classNames: ['articles', 'row']
+  classNames: ['articles', 'row'],
 });
